@@ -21,7 +21,7 @@ export const askAi = async (messages) => {
 
     const content = response?.data?.choices?.[0]?.message?.content;
 
-    if (!content || content.trim()) {
+    if (!content || !content.trim()) {
       throw new Error("AI returned empty response.");
     }
 
