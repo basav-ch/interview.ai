@@ -13,7 +13,7 @@ function Timer({ timeLeft, totalTime }) {
           textSize: "28px",
           pathColor: "#10b981",
           textColor: "#ef4444",
-          trailColor: "#e5e73b",
+          trailColor: "#e5e7eb",
         })}
       />
     </div>

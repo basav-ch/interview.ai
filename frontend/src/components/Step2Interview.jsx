@@ -135,7 +135,7 @@ function Step2Interview({ interviewData, onFinish }) {
         await new Promise((r) => setTimeout(r, 800));
 
         if (currentIndex === questions.length - 1) {
-          await speakText("Alright, this one might be a bit more challenging.");
+          await speakText("this one might be a bit more challenging.");
         }
 
         await speakText(currentQuestion.question);
