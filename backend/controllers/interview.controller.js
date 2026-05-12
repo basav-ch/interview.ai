@@ -90,9 +90,9 @@ export const generateQuestion = async (req, res) => {
       });
     }
 
-    if (user.credits < 25) {
+    if (user.credits < 50) {
       return res.status(400).json({
-        message: "Not enough credits. Minimum 25 required.",
+        message: "Not enough credits. Minimum 50 required.",
       });
     }
 
@@ -174,7 +174,7 @@ export const generateQuestion = async (req, res) => {
       });
     }
 
-    user.credits -= 25;
+    user.credits -= 50;
     await user.save();
 
     const interview = await Interview.create({
@@ -381,7 +381,7 @@ export const getMyInterviews = async (req, res) => {
   try {
     const interviews = await Interview.find({ userId: req.userId })
       .sort({ createdAt: -1 })
-      .select("role epxerience mode finalScore status createdAt");
+      .select("role experience mode finalScore status createdAt");
 
     return res.status(200).json(interviews);
   } catch (error) {

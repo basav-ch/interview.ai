@@ -193,7 +193,7 @@ function Step1Setup({ onStart }) {
                 <p className="text-gray-600 font-medium">
                   {resumeFile
                     ? resumeFile.name
-                    : "Click to upload resume (Optional)"}
+                    : "Click to upload resume (PDF or DOCX, max 1MB)"}
                 </p>
 
                 {resumeFile && (
