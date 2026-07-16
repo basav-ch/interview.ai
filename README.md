@@ -51,7 +51,7 @@ An AI-powered mock interview platform that helps users prepare for job interview
 ```
 interview-ai/
 │
-├── client/                         # React frontend
+├── frontend/                         # React frontend
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/                 # Images and static files
@@ -79,11 +79,10 @@ interview-ai/
 │   │   └── main.jsx
 │   ├── index.html
 │   ├── .env                        # Environment variables (not committed)
-│   ├── .gitignore
 │   ├── package.json
 │   └── vite.config.js
 │
-├── server/                         # Node.js backend
+├── backend/                         # Node.js backend
 │   ├── config/
 │   │   ├── connectDB.js            # MongoDB connection
 │   │   └── token.js                # JWT generation
@@ -110,9 +109,9 @@ interview-ai/
 │   │
 │   ├── index.js                    # Main server entry
 │   ├── .env                        # Environment variables (not committed)
-│   ├── package.json                  
-│   └── .gitignore
-│                          
+│   └── package.json                  
+│   
+├── .gitignore                         
 └── README.md
 ```
 
