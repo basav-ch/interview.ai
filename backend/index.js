@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://interview-ai-client-1x1k.onrender.com",
     credentials: true,
   }),
 );
