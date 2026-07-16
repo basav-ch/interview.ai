@@ -17,6 +17,12 @@ An AI-powered mock interview platform that helps users prepare for job interview
 
 ---
 
+## Project Live Link
+
+https://interview-ai-client-1x1k.onrender.com
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
